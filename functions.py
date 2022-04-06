@@ -14,7 +14,7 @@
 # my_dog('nelson', 4)
 # my_dog('milo', 8)
 # my_dog("Pepe",555)
-divider = ''' '''
+# divider = ''' '''
 # User Greeter
 # Write a function that accepts two parameters: first_name and last_name. 
 # Use those two variables to print a greeting that uses the first_name and last_name variables in the output.
@@ -22,8 +22,8 @@ divider = ''' '''
 def greeting(first_name, last_name):
     print(f'Hello and Goodmorning to you, {first_name} {last_name}!')
 
-greeting('Daniel', 'Lee')
-greeting('Lachlan', 'Heywood')
+# greeting('Daniel', 'Lee')
+# greeting('Lachlan', 'Heywood')
 
 # Email Generator
 # Write a function that accepts three parameters, first_name, last_name and domain. 
@@ -32,8 +32,8 @@ greeting('Lachlan', 'Heywood')
 def email(first_name, last_name, domain):
     print(f'{first_name[0]}.{last_name}@{domain}')
 
-email('Daniel','Lee','digitalcrafts.com')
-email('Lachlan','Heywood','google.com')
+# email('Daniel','Lee','digitalcrafts.com')
+# email('Lachlan','Heywood','google.com')
 
 # Username Generator
 # Write a function. Make it accept two parameters: first_name and last_name. 
@@ -42,9 +42,9 @@ email('Lachlan','Heywood','google.com')
 def username(first_name, last_name):
     print(f'{first_name[:3]}_{last_name[:5]}')
 
-username('daniel','lee')
-username('lachlan','Heywood')
-print(divider)
+# username('daniel','lee')
+# username('lachlan','Heywood')
+# print(divider)
 # New User Contact Information
 # Write a function that accepts three parameters, first_name, last_name and domain. 
 # Using all the functions you have created so far, call them from inside the new contact card function so that output that looks better than just printing values.
@@ -61,6 +61,6 @@ def contact_card(first_name, last_name, domain):
     print('Username: ')
     username(first_name, last_name)
 
-contact_card('Daniel', 'Lee', 'digitalcrafts.com')
-print(divider)
-contact_card('Lachlan','Heywood', 'google.com')
+# contact_card('Daniel', 'Lee', 'digitalcrafts.com')
+# print(divider)
+# contact_card('Lachlan','Heywood', 'google.com')
