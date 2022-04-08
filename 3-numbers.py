@@ -61,10 +61,6 @@ celsiusToFahrenheit(0)
 # #Gas Conversion
 # def gas_conversion(au,us):
 #     usPrice = au * .75
-    
-    
-
-
 
 # #Equity Calculator
 def equity(years_worked, valuation):
