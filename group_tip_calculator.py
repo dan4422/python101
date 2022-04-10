@@ -11,6 +11,6 @@ total_bill, percent_tip, people = group_tip_calculator()
 the_total_bill = percentage_plus(total_bill, percent_tip)
 cost_per_person = percentage_plus(total_bill, percent_tip)/people
 
-print(f'''Total bill is ${the_total_bill}
-Cost per person is ${round(cost_per_person,2)}''')
+print(f'''Total bill is ${the_total_bill:.2f}
+Cost per person is ${round(cost_per_person,2):.2f}''')
 
