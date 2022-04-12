@@ -14,7 +14,7 @@ press q to quit:
         title = input('What is the title of the task?: ')
         priority = input('What level priority?(high/medium/low): ').lower()
         if (priority == 'high') or (priority == 'medium') or (priority == 'low'):
-            entered_task = {'title': title, 'priority':priority}
+            entered_task = {'title': title, 'priority': priority}
             tasks.append(entered_task)
         else:
             print('Use only high, medium, or low!')

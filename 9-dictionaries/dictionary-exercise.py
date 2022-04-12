@@ -61,7 +61,6 @@
 # print(top3)
 
 # structuring data
-
 def contact_card(customer_info):
     for data in customer_info:
         print(f'{data}: {customer_info[data]}')
@@ -74,7 +73,7 @@ customer = {
     'customer ID': 11111,}
 
 customers = [
-    {
+{
     'name':'tom hanks',
     'address':'545 glenridge drive',
     'email': 'thanks@gmail.com',
@@ -105,9 +104,27 @@ for customer in customers:
     print(' ')
 
 # Bonus: User Input
-# user_input = input('What would you like to do?(print/add/find):').lower()
-# if user_input == 'print':
-#     for names in customers:
-#         print(customers['names'])
-
-# print(customers['names'])
+while True:
+    user_input = input('What would you like to do?(print/add/find/quit):').lower()
+    if user_input == 'print':
+        for customer_data in customers:
+            print(customer_data['name'])
+    elif user_input == 'add':
+        new_customer_name = input('New customer name?: ')
+        new_customer_address = input('New customer address?: ')
+        new_customer_email = input('New customer email?: ')
+        new_customer_creditcard = input('New customer credit card number?: ')
+        new_customer_ID = customers[-1]['customer ID'] + 1
+        new_customer = {'name': new_customer_name, 'address': new_customer_address, 'email': new_customer_email, 
+        'credit card number': new_customer_creditcard, 'customer ID': new_customer_ID}
+        customers.append(new_customer)
+        print(contact_card(new_customer))
+    elif user_input == 'find':
+        find_email = input("Enter customer's email to get customer data: ")
+        for customer in customers:
+            if customer['email'] == find_email in customer['email']:
+                print(customer)
+    elif user_input == 'quit':
+        break
+    else:
+        print('Try again!')

@@ -32,12 +32,24 @@
 # Coin Flipper
 import random
 
-def coin_flip():
-    coin = ['heads','tails']
-    return random.choice(coin)
+# def coin_flip():
+#     coin = ['heads','tails']
+#     return random.choice(coin)
 
-print('You have 1 coin.')
-answer = input('Do you want another?(yes/no): ')
-if answer.lower() == 'yes':
-    print('You have 2 coins.')
-    
+# coins = 1
+# list = ['yes']
+# print('You have 1 coin.')
+# while True:
+#     answer = input('Do you want another?(yes/no): ')
+#     if answer.lower() == 'yes':
+#         coins += 1
+#         list.append('yes')
+#         print(f'You have {coins} coins.')
+#     elif answer.lower() == 'no':
+#         print("Let's flip them!")
+#         for coin in range(coins):
+#             print(f'Coin {coin+1} - {coin_flip()}')
+#         break
+
+# Guessing Game
+

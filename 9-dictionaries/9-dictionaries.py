@@ -65,39 +65,38 @@
 
 # print(orders)
 
-words = "To be or not to be or do be do be do".split()
+# words = "To be or not to be or do be do be do".split()
 
-freq = {}
+# freq = {}
 
-for words in words:
-    if words not in freq:
-        freq[words] = 0
-    freq[words] += 1
+# for words in words:
+#     if words not in freq:
+#         freq[words] = 0
+#     freq[words] += 1
 
-print(freq)
+# print(freq)
 
-highest = None
-for word in freq:
-    current_value = freq[word]
-    if (highest == None):
-        highest = word
+# highest = None
+# for word in freq:
+#     current_value = freq[word]
+#     if (highest == None):
+#         highest = word
     
-    if current_value > freq[highest]:
-        highest = word
+#     if current_value > freq[highest]:
+#         highest = word
 
-print(highest)
+# print(highest)
 
-del freq[highest]
+# del freq[highest]
 
-second_highest = None
-highest = None
-for word in freq:
-    current_value = freq[word]
-    if (second_highest == None):
-        second_highest = word
+# second_highest = None
+# highest = None
+# for word in freq:
+#     current_value = freq[word]
+#     if (second_highest == None):
+#         second_highest = word
     
-    if current_value > freq[second_highest]:
-        second_highest = word
+#     if current_value > freq[second_highest]:
+#         second_highest = word
 
-print(second_highest)
-
+# print(second_highest)
